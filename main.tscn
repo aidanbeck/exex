@@ -1,0 +1,103 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctxv0sjht72iv"]
+
+[ext_resource type="PackedScene" uid="uid://7ltqlk0hkdo8" path="res://player.tscn" id="1_3etbg"]
+[ext_resource type="Script" path="res://main.gd" id="1_rb2qu"]
+[ext_resource type="PackedScene" uid="uid://bpex604svrcfd" path="res://dirt.tscn" id="2_2bgmn"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_rb2qu")
+
+[node name="Player" parent="." groups=["Player"] instance=ExtResource("1_3etbg")]
+position = Vector2(16, 16)
+
+[node name="blocks" type="CanvasGroup" parent="."]
+
+[node name="Dirt" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(16, 48)
+
+[node name="Dirt2" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(16, 80)
+
+[node name="Dirt3" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(48, 48)
+
+[node name="Dirt4" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(48, 80)
+
+[node name="Dirt5" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(80, 48)
+
+[node name="Dirt6" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(80, 80)
+
+[node name="Dirt7" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(112, 48)
+
+[node name="Dirt8" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(112, 80)
+
+[node name="Dirt9" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(16, 112)
+
+[node name="Dirt10" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(48, 112)
+
+[node name="Dirt11" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(80, 112)
+
+[node name="Dirt12" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(112, 112)
+
+[node name="Dirt13" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(16, 144)
+
+[node name="Dirt14" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(48, 144)
+
+[node name="Dirt15" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(80, 144)
+
+[node name="Dirt16" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(112, 144)
+
+[node name="Dirt17" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(16, 176)
+
+[node name="Dirt18" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(48, 176)
+
+[node name="Dirt19" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(80, 176)
+
+[node name="Dirt20" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(112, 176)
+
+[node name="Dirt21" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(144, 48)
+
+[node name="Dirt22" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(144, 80)
+
+[node name="Dirt23" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(144, 112)
+
+[node name="Dirt24" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(144, 144)
+
+[node name="Dirt25" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(144, 176)
+
+[node name="Dirt26" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(176, 48)
+
+[node name="Dirt27" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(176, 80)
+
+[node name="Dirt28" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(176, 112)
+
+[node name="Dirt29" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(176, 144)
+
+[node name="Dirt30" parent="blocks" instance=ExtResource("2_2bgmn")]
+position = Vector2(176, 176)

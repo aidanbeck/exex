@@ -1,0 +1,77 @@
+[gd_scene load_steps=5 format=3 uid="uid://7ltqlk0hkdo8"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_2iay2"]
+[ext_resource type="Texture2D" uid="uid://s0owf3koglpa" path="res://art/dev.bmp" id="2_g21jb"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7anle"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_g21jb")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sn52m"]
+size = Vector2(28, 28)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_2iay2")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7anle")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_sn52m")
+
+[node name="detectorE" type="Area2D" parent="."]
+position = Vector2(32, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="detectorE"]
+position = Vector2(1.78814e-07, 0)
+scale = Vector2(0.25, 0.25)
+sprite_frames = SubResource("SpriteFrames_7anle")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detectorE"]
+shape = SubResource("RectangleShape2D_sn52m")
+
+[node name="detectorS" type="Area2D" parent="."]
+position = Vector2(0, 32)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="detectorS"]
+position = Vector2(1.78814e-07, 0)
+scale = Vector2(0.25, 0.25)
+sprite_frames = SubResource("SpriteFrames_7anle")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detectorS"]
+shape = SubResource("RectangleShape2D_sn52m")
+
+[node name="detectorN" type="Area2D" parent="."]
+position = Vector2(0, -32)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="detectorN"]
+position = Vector2(1.78814e-07, 0)
+scale = Vector2(0.25, 0.25)
+sprite_frames = SubResource("SpriteFrames_7anle")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detectorN"]
+shape = SubResource("RectangleShape2D_sn52m")
+
+[node name="detectorW" type="Area2D" parent="."]
+position = Vector2(-32, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="detectorW"]
+position = Vector2(1.78814e-07, 0)
+scale = Vector2(0.25, 0.25)
+sprite_frames = SubResource("SpriteFrames_7anle")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detectorW"]
+shape = SubResource("RectangleShape2D_sn52m")
